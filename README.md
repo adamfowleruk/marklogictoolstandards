@@ -11,9 +11,19 @@ We're documenting the tools available right now, and what we want them to do.
 - [What tools are available?](documentation/ToolList.md)
 - [Current Tool Deployment Tasks](documentation/DeployTasks.md)
 
-## Phase 2 - Agree basic Standards
+## Phase 2 - Agree goals
+
+We need to agree the goals of the project/effort.
+
+- [Goals of the project](documentation/Goals.md)
+
+## Phase 3 - Create standards road map
 
 All of the below are a work in progress...
 
 - [Application Foldering Layout](documentation/Foldering.md)
 - [Target Environment Configuration Files](documentation/ConfigFiles.md)
+
+## Phase 4 - Implement standards in tools
+
+TODO define which tools will implement what, by when.
