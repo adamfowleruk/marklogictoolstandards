@@ -5,7 +5,7 @@ Back to [Home](../README.md)
 This project aims to document what tools are available for MarkLogic, create consensus on the features required,
 create standards around how to support the features, and implement the features in a suite/suites of tools.
 
-## Goals of the tools
+## Purpose of the tools
 
 Below are the things those using MarkLogic Server need to accomplish.
 
