@@ -12,24 +12,25 @@ Task | Roxy/mlsound | mljsadmin | ml-gradle
 ---- | ---- | ---- | ----
 Create application scaffolding | init/create | N/A | mlScaffold
 Initialise tool | init | N/A | N/A
+Upgrade tool | upgrade | ? | ?
 Create config files | init | N/A | N/A
 Print config information | info | N/A | --info
 Specify environment configuration to use | CMD ENVNAME | --conf=CONFFILE | Gradle properties plugin
 Create environment | bootstrap | install | mlDeploy
 Create REST API instance (content db) | ? | --install=restapi | mlCreateResource
 Create REST API instance (modules db) | ? | --install=modulesrestapi | mlCreateResource
-Deploy ML modules | deploy modules | --install=modules | mlLoadModules or mlReloadModules
+Deploy ML modules | deploy src or deploy modules | --install=modules | mlLoadModules or mlReloadModules
 Deploy web app | deploy modules | N/A (runs in node) | N/A
-Deploy rest extensions | ? | --install=extensions | mlLoadModules
+Deploy rest extensions | deploy ext or deploy modules | --install=extensions | mlLoadModules
 Deploy rest resources | ? | N/A | mlLoadModules
-Deploy triggers | ? | --install=triggers $ | mlDeployTriggers
-Deploy alert config | ? | ? | mlDeployAlertConfig
+Deploy triggers | deploy triggers | --install=triggers $ | mlDeployTriggers
+Deploy alert config | In progress.. | ? | mlDeployAlertConfig
 Update search options | ? | --update=searchoptions | mlLoadModules
 Update database configuration (content) | ? | --update=dbconfig | mlDeployDatabases
 Update database configuration (modules) | ? | --update=modulesdbconfig | mlDeployDatabases
 Update installed ontology | ? | --update=ontology | N/A
 Update MLJS Workplace config | ? | --update=workplace $ | N/A
-Copy in content | deploy data | load or --load=/some/folder | Use MlcpTask or roll your own Gradle task
+Copy in content | deploy data also supports MLCP | load or --load=/some/folder | Use MlcpTask or roll your own Gradle task
 Remove content from server | clean | clean | mlClearContentDatabase
 Get config from server | N/A | capture | N/A
 Get database config (content) | ? | --capture=dbconfig | N/A
@@ -44,8 +45,11 @@ Initialise application to pre-demo state | ? | reset | Custom Gradle task
 Removing environment | wipe | remove | mlUndeploy
 Remove REST API (content DB) | ? | --remove=dbconfig | mlUndeploy
 Remove REST API (modules DB) | ? | --remove=modulesdbconfig | mlUndeploy
-Remove REST extensions | ? | --remove=extensions | mlClearModules
-Remove Triggers | ? | --remove=triggers $ | mlClearTriggers
+Remove REST extensions | clean ext | --remove=extensions | mlClearModules
+Remove Triggers | clean triggers | --remove=triggers $ | mlClearTriggers
+MLCP Support | yes | ? | ?
+CORB Support | yes | ? | ?
+
 
 Note that $ means the function requires a server side extension. E.g. REST extension or some other functionality
 
